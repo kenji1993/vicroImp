@@ -1,5 +1,31 @@
 * {
     margin: 0;
     padding: 0;
-    
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+a {
+    text-decoration: none;
+    list-style: none;
+    color: yellow;
+    font-size: 1.6rem;
+    font-weight: bolder;
+}
+a:hover {
+    color: white;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #000;
+}
+.logo {
+    width: 10rem;
+}
+nav ul li {
+    display: inline-block;
 }

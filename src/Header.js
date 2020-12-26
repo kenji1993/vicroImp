@@ -1,4 +1,6 @@
 import React from 'react'
+import Navbar from './components/Navbar'
+import Logo from './components/Logo'
 
 
 
@@ -6,8 +8,8 @@ const Header = () => {
     return(
         <>
             <header>
-                <h1>Hola mundo</h1>
-                <button className="btn btn-primary">Press me</button>
+                <Logo/>
+                <Navbar/>
             </header>
         </>
     )
