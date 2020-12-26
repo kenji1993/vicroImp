@@ -17,6 +17,9 @@ a {
 a:hover {
     color: white;
 }
+.bi-cart4 {
+    color: yellow;
+}
 header {
     display: flex;
     justify-content: space-around;
@@ -28,4 +31,8 @@ header {
 }
 nav ul li {
     display: inline-block;
+}
+.bi-cart4 {
+    font-size: 3rem;
+    cursor: pointer;
 }
