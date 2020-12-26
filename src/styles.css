@@ -36,3 +36,14 @@ nav ul li {
     font-size: 3rem;
     cursor: pointer;
 }
+.bi-cart4:hover {
+    color: white;
+}
+.itemList {
+    color: yellow;
+    font-size: 1.6rem;
+    margin-left: 0.5rem;
+    margin-top: 0.9rem;
+    font-weight: bolder;
+
+}
