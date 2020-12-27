@@ -13,7 +13,7 @@ const App = () => {
  
             <div className="container">
                 <div className="row justify-content-end">
-                    <div className="col-3">
+                    <div className="col-2">
                         <ItemListContainer itemList="Lista de items"/>
                     </div>
                 </div>     
