@@ -4,7 +4,7 @@ import logo from './img/vicroLogo.jpeg'
 const Logo = () => {
     return(
         <>
-        <figure>
+        <figure className="col-2">
             <img src={logo} className="logo"></img>
         </figure>
         </>

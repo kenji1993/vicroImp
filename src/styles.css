@@ -7,6 +7,7 @@
 html {
     font-size: 62.5%;
 }
+
 a {
     text-decoration: none;
     list-style: none;
@@ -21,10 +22,11 @@ a:hover {
     color: yellow;
 }
 header {
+    background: #000;
+}
+.header-row {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    background: #000;
 }
 .logo {
     width: 10rem;
@@ -40,7 +42,7 @@ nav ul li {
     color: white;
 }
 .itemList {
-    color: yellow;
+    color: #000;
     font-size: 1.6rem;
     margin-left: 0.5rem;
     margin-top: 0.9rem;

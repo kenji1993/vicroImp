@@ -6,7 +6,7 @@ import ItemListContainer from './ItemListContainer'
 const Navbar = () => {
     return(
         <>
-            <nav className="navbar navbar-dark">
+            <nav className="navbar navbar-dark col-4">
                 <ul>
                     <li className="nav-item">
                         <a className="nav-link" href="#">Remeras</a>
@@ -17,13 +17,8 @@ const Navbar = () => {
                         <li className="nav-item">
                         <a className="nav-link" href="#">Chombas</a>
                     </li>
-                </ul>
-                <ul>
                     <li className="nav-item">
                         <CartWidget/>
-                    </li>
-                    <li className="nav-item">
-                        <ItemListContainer/>
                     </li>
                 </ul>
             </nav>

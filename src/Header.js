@@ -6,11 +6,14 @@ import Logo from './components/Logo'
 
 const Header = () => {
     return(
-        <>
-            <header>
-                <Logo/>
-                <Navbar/>
-            </header>
+        <>    
+                <div className="container">
+                    <div className="row header-row">
+                        <Logo/>
+                        <Navbar/>
+                    </div>
+                </div>
+            
         </>
     )
 }

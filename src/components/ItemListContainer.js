@@ -1,8 +1,8 @@
-import React from 'react'
+import React, {Component} from 'react'
 
-const ItemListContainer = () => {
+const ItemListContainer = props => {
     
-    const itemList = "Lista de items"
+    const { itemList } = props
 
     return(
         <>
