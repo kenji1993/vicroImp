@@ -6,9 +6,9 @@ import ItemListContainer from './components/ItemListContainer'
 const App = () => {
     return(
         <>
-            <header>
+            <div className="header-bg">
                <Header/>
-            </header>
+            </div>
             
  
             <div className="container">
