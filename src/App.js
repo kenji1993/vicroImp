@@ -18,9 +18,7 @@ const App = () => {
                         <ItemListContainer itemList="Lista de items"/>
                     </div>
                 </div> 
-                <div className="col-3">
-                    <ItemCount/>
-                </div>    
+                    <ItemCount/>     
             </div>
                
         </>

@@ -1,4 +1,6 @@
 import React, {useState} from 'react'
+import chomba from './img/chombasTommy.jpg'
+
 
 const ItemCount = () => {
     
@@ -12,15 +14,18 @@ const ItemCount = () => {
     }
 
     return(
-        <>
-            <h2>Remera:</h2>
-            <div>
-            <button onClick={ sumarProductos }>+</button>
-            <p>{ productos }</p>
-            <button onClick={ restarProductos }>-</button>
+        <div className="card col-3 card-product">
+            <img src={chomba} className="card-img-top" alt="imagen chomba" />
+            <div className="card-body">
+                <h2 className="card-title">CHOMBA TOMMY</h2>
+                <div className="productCounter">
+                    <button type="button" onClick={ restarProductos } className="btn btn-outline-dark btn-lg">-</button>
+                    <p>{ productos }</p>
+                    <button type="button" onClick={ sumarProductos } className="btn btn-outline-dark btn-lg">+</button>
+                </div>
             </div>
             
-        </>
+        </div>
     )
 }
 

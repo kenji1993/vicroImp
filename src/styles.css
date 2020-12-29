@@ -50,3 +50,17 @@ nav ul li {
     border: 0.2rem solid black;
     text-align: center;
 }
+.card-product {
+    display: flex;
+    align-items: center;
+}
+.productCounter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.productCounter p {
+    font-size: 1.2rem;
+    align-self: center;
+    margin-top: 0.4rem;
+}
