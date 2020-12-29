@@ -13,6 +13,7 @@ const ItemCount = () => {
         setProductos(productos -1)
     }
 
+
     return(
         <div className="card col-3 card-product">
             <img src={chomba} className="card-img-top" alt="imagen chomba" />
