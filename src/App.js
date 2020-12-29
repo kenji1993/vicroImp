@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './Header'
 import ItemListContainer from './components/ItemListContainer'
+import ItemCount from './components/ItemCount'
 
 
 const App = () => {
@@ -16,7 +17,10 @@ const App = () => {
                     <div className="col-2">
                         <ItemListContainer itemList="Lista de items"/>
                     </div>
-                </div>     
+                </div> 
+                <div className="col-3">
+                    <ItemCount/>
+                </div>    
             </div>
                
         </>
