@@ -33,7 +33,7 @@ const ItemCount = props => {
             <img src={productImg} className="card-img-top" alt={ imgAlt } />
             <div className="card-body">
                 <h2 className="card-title">{nombreProducto}</h2>
-                <p className="stock">Stock: {stock}</p>
+                <p className="stock">Stock: {stock - productos}</p>
                 <div className="productCounter row">
                     <button type="button" onClick={ restarProductos } className="btn btn-outline-dark btn-lg col-3">-</button>
                     <p className="col-4 displayCounter">{ productos }</p>
