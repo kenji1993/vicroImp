@@ -5,7 +5,7 @@ const Logo = () => {
     return(
         <>
         <figure className="col-2">
-            <img src={logo} className="logo"></img>
+            <img src={logo} className="logo" alt="Logo"></img>
         </figure>
         </>
     )

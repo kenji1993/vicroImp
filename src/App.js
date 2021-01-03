@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './Header'
 import ItemListContainer from './components/ItemListContainer'
 import ItemCount from './components/ItemCount'
+import chomba from './components/img/chombasTommy.jpg'
 
 
 const App = () => {
@@ -18,7 +19,7 @@ const App = () => {
                         <ItemListContainer itemList="Lista de items"/>
                     </div>
                 </div> 
-                    <ItemCount/>     
+                    <ItemCount stock="9" nombreProducto="CHOMBA TOMMY" productImg={ chomba } imgAlt="Chomba Tommy"/>     
             </div>
                
         </>
