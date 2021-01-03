@@ -12,7 +12,9 @@ const ItemCount = () => {
     const restarProductos = () => {
         setProductos(productos -1)
     }
-
+    if(productos < 0) {
+       return setProductos(0)
+    }
 
     return(
         <div className="card col-3 card-product">
