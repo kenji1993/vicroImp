@@ -1,12 +1,16 @@
 import React from 'react'
+import { List } from 'react-bootstrap-icons'
 import Item from './Item'
 
 
-const ItemList = () => {
+const ItemList = ({ItemList}) => {
     return(
-        <>
-            <Item/>
-        </>
+        <div className="ItemList">
+            { List.map( p => 
+                <Item key={p.id} id{p.id} title={p.title} price={p.price} />
+            ) }
+        </div>    
+    
     )
 }
 
