@@ -1,18 +1,20 @@
 import React from 'react'
-import { List } from 'react-bootstrap-icons'
 import Item from './Item'
 
 
-const ItemList = ({ItemList}) => {
-    return(
-        <div className="ItemList">
-            { List.map( p => 
-                <Item key={p.id} id{p.id} title={p.title} price={p.price} />
-            ) }
-        </div>    
-    
+
+function ItemList({ items }) {
+    return (
+        <div>
+            { items.map(item => (
+                <div >
+                    <Item key={item.id} title={item.title} />
+                </div>
+            ))
+
+            }
+        </div>
     )
 }
-
 
 export default ItemList

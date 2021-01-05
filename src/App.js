@@ -16,7 +16,7 @@ const App = () => {
             <div className="container">
                 <div className="row justify-content-end">
                     <div className="col-2">
-                        <ItemListContainer itemList="Lista de items"/>
+                        <ItemListContainer list="Item List"/>
                     </div>
                 </div> 
                     <ItemCount stock="9" nombreProducto="CHOMBA TOMMY" productImg={ chomba } imgAlt="Chomba Tommy"/>     
