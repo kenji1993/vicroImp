@@ -29,7 +29,7 @@ const ItemCount = props => {
     }
 
     return(
-        <div className="card col-3 card-product">
+        <div className="card col-4 card-product">
             <img src={productImg} className="card-img-top" alt={ imgAlt } />
             <div className="card-body">
                 <h2 className="card-title">{nombreProducto}</h2>

@@ -48,7 +48,7 @@ const ItemListContainer = () => {
                 } else {
                     rejected("hubo un error")
                 }
-            }, 0)
+            }, 2000)
         })
     
         useEffect(() => {
