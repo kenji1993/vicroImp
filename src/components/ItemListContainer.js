@@ -1,36 +1,43 @@
 import React, {useState, useEffect} from 'react'
 import ItemList from './ItemList'
 
-
 let itemsList = [
     {
         id: 1,
         title: "Chomba Tommy",
         price: 1200,
         stock: 5,
+        description: "Chomba lisa",
+        pictureUrl: "https://i.ibb.co/tHrYBbS/chombas-Tommy.jpg"
     },
     {
         id: 2,
         title: "Remera Tommy",
         price: 1100,
         stock: 7,
+        description: "Remera letras de colores",
+        pictureUrl: "https://i.ibb.co/1TTspd8/remeras-Tommy.jpg"
     },
     {
         id: 1,
-        title: "Short",
-        price: 1500,
+        title: "Bermuda Tommy",
+        price: 1800,
         stock: 4,
+        description: "Bermuda gabardina",
+        pictureUrl: "https://i.ibb.co/8XkzC4G/bermuda-Tommy.jpg"
     },
     {
         id: 4,
-        title: "Remera A&F",
+        title: "Remera Polo",
         price: 1400,
         stock: 10,
+        description: "Remera lisa",
+        pictureUrl: "https://i.ibb.co/MGd0M21/remeras-Polo.jpg"
     },
     
 ]
 
-const ItemListContainer = ({list}) => {
+const ItemListContainer = () => {
 
         const [items, setItems] = useState([])
         const promise = new Promise((resolve, rejected) => {
@@ -41,7 +48,7 @@ const ItemListContainer = ({list}) => {
                 } else {
                     rejected("hubo un error")
                 }
-            }, 2000)
+            }, 0)
         })
     
         useEffect(() => {
@@ -51,11 +58,11 @@ const ItemListContainer = ({list}) => {
         }, [])
     
         return (
-            <div>
-                <p>{list}</p>
+            <div className="col-2 itemListContainer">
                 <ItemList items={items} />
             </div>
         )
 }
 
 export default ItemListContainer
+

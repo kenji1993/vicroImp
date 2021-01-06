@@ -2,7 +2,7 @@ import React from 'react'
 import Header from './Header'
 import ItemListContainer from './components/ItemListContainer'
 import ItemCount from './components/ItemCount'
-import chomba from './components/img/chombasTommy.jpg'
+import chomba from '../src/img/chombasTommy.jpg'
 
 
 const App = () => {
@@ -14,12 +14,11 @@ const App = () => {
             
  
             <div className="container">
-                <div className="row justify-content-end">
-                    <div className="col-2">
-                        <ItemListContainer list="Item List"/>
-                    </div>
+                <div className="row firstRow">
+                        <ItemCount stock="9" nombreProducto="CHOMBA TOMMY" productImg={ chomba } imgAlt="Chomba Tommy"/>
+                        <ItemListContainer/>
                 </div> 
-                    <ItemCount stock="9" nombreProducto="CHOMBA TOMMY" productImg={ chomba } imgAlt="Chomba Tommy"/>     
+                         
             </div>
                
         </>
