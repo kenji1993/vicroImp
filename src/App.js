@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './Header'
 import ItemListContainer from './components/ItemListContainer'
+import ItemDetailContainer from './components/ItemDetailContainer'
 
 
 
@@ -14,8 +15,9 @@ const App = () => {
             
  
             <div className="container">
-                <div className="row firstRow">
+                <div className="row main">
                         <ItemListContainer/>
+                        <ItemDetailContainer/>
                 </div> 
                          
             </div>

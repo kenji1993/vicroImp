@@ -63,14 +63,21 @@ nav ul li {
     text-align: center;
     margin-top: 0.4rem;
 }
-.firstRow {
+.main {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
-.itemListContainer {
-   margin-right: -8rem;
+.item {
+    border: 0.2rem solid black;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 1rem;
 }
-.itemList {
+
+/* .itemList {
     color: #000;
     font-size: 1.6rem;
     margin-left: 0.5rem;
@@ -84,4 +91,4 @@ nav ul li {
     align-items: center;
     padding: 0.2rem;
 }
-
+ */

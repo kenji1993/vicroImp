@@ -3,14 +3,14 @@ import Item from './Item'
 
 
 
-function ItemList({ items}) {
+function ItemList({items}) {
 
 
     return (
         <>
             { items.map(item => (
-                <div  className="itemList">
-                    <Item key={item.id} id={item.id} title={item.title} description={item.description}
+                <div  className="itemList col-3">
+                    <Item id={item.id} title={item.title} description={item.description}
                      price={item.price} pictureUrl={item.pictureUrl} />
                 </div>
             ))

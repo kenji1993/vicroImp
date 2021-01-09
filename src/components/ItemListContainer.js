@@ -52,7 +52,7 @@ const ItemListContainer = () => {
                 } else {
                     rejected("hubo un error")
                 }
-            }, 2000)
+            }, 0)
         })
     
         useEffect(() => {
@@ -62,10 +62,10 @@ const ItemListContainer = () => {
         }, [])
     
         return (
-            <div className="col-3 itemListContainer">
+            <>
                 <ItemCount stock={9} initial={1} productImg={chomba} imgAlt="Chomba Tommy" nombreProducto="Chomba Tommy" />
                 <ItemList items={items} />
-            </div>
+            </>
         )
 }
 
