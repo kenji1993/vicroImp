@@ -1,8 +1,8 @@
 import React from 'react'
 import Header from './Header'
 import ItemListContainer from './components/ItemListContainer'
-import ItemCount from './components/ItemCount'
-import chomba from '../src/img/chombasTommy.jpg'
+
+
 
 
 const App = () => {
@@ -15,7 +15,6 @@ const App = () => {
  
             <div className="container">
                 <div className="row firstRow">
-                        <ItemCount stock="9" nombreProducto="CHOMBA TOMMY" productImg={ chomba } imgAlt="Chomba Tommy"/>
                         <ItemListContainer/>
                 </div> 
                          

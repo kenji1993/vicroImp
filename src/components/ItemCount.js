@@ -1,14 +1,9 @@
 import React, {useState} from 'react'
 
 
-const ItemCount = props => {
+const ItemCount = ({stock, initial, nombreProducto, productImg, imgAlt}) => {
     
-    const [productos, setProductos] = useState(0)
-
-    let { stock } = props
-    const { nombreProducto } = props
-    const { productImg } = props
-    const { imgAlt } = props
+    const [productos, setProductos] = useState(initial)
 
 
     const sumarProductos = () => {
@@ -23,14 +18,14 @@ const ItemCount = props => {
        return setProductos(0)
     }
     
-    const addItemToCart = () => {
+    const onAdd = () => {
         setProductos(0)
-        console.log(`Chombas Tommy ${productos}` )
+        console.log(`${nombreProducto}  ${productos}` )
     }
 
     return(
-        <div className="card col-4 card-product">
-            <img src={productImg} className="card-img-top" alt={ imgAlt } />
+        <div className="card col card-product">
+            <img src={productImg} className="card-img-top" alt={imgAlt} />
             <div className="card-body">
                 <h2 className="card-title">{nombreProducto}</h2>
                 <p className="stock">Stock: {stock - productos}</p>
@@ -39,7 +34,7 @@ const ItemCount = props => {
                     <p className="col-4 displayCounter">{ productos }</p>
                     <button type="button" onClick={ sumarProductos } className="btn btn-outline-dark btn-lg col-3">+</button>
 
-                    <button type="button" onClick={ addItemToCart } className="btn btn-outline-dark btn-lg mt-1">Agregar al carrito</button>
+                    <button type="button" onClick={ onAdd } className="btn btn-outline-dark btn-lg mt-1">Agregar al carrito</button>
                 </div>
                 
             </div>

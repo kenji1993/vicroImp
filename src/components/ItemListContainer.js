@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react'
+import ItemCount from './ItemCount'
 import ItemList from './ItemList'
+import chomba from '../img/chombasTommy.jpg'
 
 let itemsList = [
     {
@@ -40,6 +42,8 @@ let itemsList = [
 const ItemListContainer = () => {
 
         const [items, setItems] = useState([])
+
+
         const promise = new Promise((resolve, rejected) => {
             setTimeout(() => {
                 let status = 200
@@ -58,7 +62,8 @@ const ItemListContainer = () => {
         }, [])
     
         return (
-            <div className="col-2 itemListContainer">
+            <div className="col-3 itemListContainer">
+                <ItemCount stock={9} initial={1} productImg={chomba} imgAlt="Chomba Tommy" nombreProducto="Chomba Tommy" />
                 <ItemList items={items} />
             </div>
         )

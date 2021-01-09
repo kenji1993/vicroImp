@@ -46,7 +46,6 @@ nav ul li {
     display: flex;
     align-items: center;
     border: 0.1rem solid rgb(70, 64, 64);
-    height: 60rem;
     padding: 1rem;
 }
 .stock {
@@ -66,7 +65,10 @@ nav ul li {
 }
 .firstRow {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+}
+.itemListContainer {
+   margin-right: -8rem;
 }
 .itemList {
     color: #000;
