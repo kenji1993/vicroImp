@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react'
-import Counter from './Counter'
 import ItemDetail from './ItemDetail'
 
 
@@ -41,7 +40,7 @@ let itemsList = [
 
 const ItemDetailContainer = () => {
     const [items, setItem] = useState([])
-
+    
     const promesa = new Promise((resolve, reject) => {
         setTimeout(() => {
             let status = 200
@@ -62,7 +61,7 @@ const ItemDetailContainer = () => {
     return (
         <>
             { items.map(item => (
-                <div  className="itemList col-3">
+                <div  className="itemList col-lg-3 col-sm-3 col-md-4 col-9">
                     <ItemDetail id={item.id} title={item.title} description={item.description}
                      price={item.price} pictureUrl={item.pictureUrl} stock={item.stock}/>
                 </div>

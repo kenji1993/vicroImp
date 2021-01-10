@@ -68,7 +68,7 @@ nav ul li {
 }
 .main {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .item {
     border: 0.2rem solid black;
@@ -93,7 +93,9 @@ nav ul li {
     border: 0.2rem solid yellow;
 }
 
-
+.productCounter:hover {
+    color: yellow;
+}
 .card-title {
     font-weight: bolder;
     text-decoration: underline;

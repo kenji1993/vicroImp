@@ -24,7 +24,7 @@ const ItemCount = ({stock, initial, nombreProducto, productImg, imgAlt}) => {
     }
 
     return(
-        <div className="card col-3 card-product">
+        <div className="card card-product col-lg-3  col-sm-6 col-md-4 col-9">
             <img src={productImg} className="card-img-top" alt={imgAlt} />
             <div className="card-body">
                 <h2 className="card-title">{nombreProducto}</h2>
