@@ -12,10 +12,10 @@ const ItemCount = ({stock, initial, nombreProducto, productImg, imgAlt}) => {
       }
     }
     const restarProductos = () => {
+        if (productos > 0) {
         setProductos(productos -1)
-    }
-    if(productos < 0) {
-       return setProductos(0)
+
+        }
     }
     
     const onAdd = () => {

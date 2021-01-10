@@ -50,7 +50,7 @@ const ItemListContainer = () => {
                 if (status < 400) {
                     resolve(itemsList)
                 } else {
-                    rejected("hubo un error")
+                    rejected("Ha ocurrido un error")
                 }
             }, 0)
         })
@@ -58,7 +58,7 @@ const ItemListContainer = () => {
         useEffect(() => {
             promise
                 .then(items => setItems(items))
-                .catch(console.log("hubo un error"))
+                .catch(console.log("Ha ocurrido un error"))
         }, [])
     
         return (

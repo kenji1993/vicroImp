@@ -7,7 +7,9 @@
 html {
     font-size: 62.5%;
 }
-
+body {
+    font-family: 'Roboto', sans-serif;
+}
 a {
     text-decoration: none;
     list-style: none;
@@ -45,7 +47,8 @@ nav ul li {
 .card-product {
     display: flex;
     align-items: center;
-    border: 0.1rem solid rgb(70, 64, 64);
+    border: 0.2rem solid #000;
+    border-radius: 1rem;
     padding: 1rem;
 }
 .stock {
@@ -73,8 +76,29 @@ nav ul li {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding: 1rem;
     margin-top: 1rem;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    box-shadow: 0 14px 26px rgba(0,0,0,0.04);
+    transition: all 0.3s ease-out;
+}
+.item:hover {
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+    box-shadow: 0 24px 36px rgba(0,0,0,0.11),
+        0 24px 46px rgba(219, 222, 228, 0.034);
+    background-color: #000;
+    color: yellow;
+    border: 0.2rem solid yellow;
+}
+
+
+.card-title {
+    font-weight: bolder;
+    text-decoration: underline;
+    font-size: 1.8rem;
+    margin-top: 0.5rem;
 }
 
 /* .itemList {
