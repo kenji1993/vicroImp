@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
-import ItemCount from './ItemCount'
+// import ItemCount from './ItemCount'
 import ItemList from './ItemList'
-import chomba from '../img/chombasTommy.jpg'
+// import chomba from '../img/chombasTommy.jpg'
 
 let itemsList = [
     {
@@ -21,7 +21,7 @@ let itemsList = [
         pictureUrl: "https://i.ibb.co/1TTspd8/remeras-Tommy.jpg"
     },
     {
-        id: 1,
+        id: 3,
         title: "Bermuda Tommy",
         price: 1800,
         stock: 4,
@@ -43,16 +43,15 @@ const ItemListContainer = () => {
 
         const [items, setItems] = useState([])
 
-
-        const promise = new Promise((resolve, rejected) => {
+        const promise = new Promise((resolve, reject) => {
             setTimeout(() => {
                 let status = 200
                 if (status < 400) {
                     resolve(itemsList)
                 } else {
-                    rejected("Ha ocurrido un error")
+                    reject("Ha ocurrido un error")
                 }
-            }, 0)
+            }, 500)
         })
     
         useEffect(() => {
@@ -63,7 +62,7 @@ const ItemListContainer = () => {
     
         return (
             <>
-                <ItemCount stock={9} initial={1} productImg={chomba} imgAlt="Chomba Tommy" nombreProducto="Chomba Tommy" />
+                {/* <ItemCount stock={9} initial={1} productImg={chomba} imgAlt="Chomba Tommy" nombreProducto="Chomba Tommy" /> */}
                 <ItemList items={items} />
             </>
         )

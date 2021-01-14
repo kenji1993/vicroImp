@@ -1,10 +1,11 @@
 import React from 'react'
+import { useParams } from 'react-router-dom'
 import Item from './Item'
 
 
 
 function ItemList({items}) {
-
+    const {id} = useParams()
 
     return (
         <>
